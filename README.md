@@ -41,3 +41,182 @@ https://github.com/gurnitha/2022-django-ecom-finesauces
 
         modified:   README.md
         new file:   requirements.txt
+
+
+
+### 2. STARTING ECOMMERCE FINESAUCES PROJECT
+--------------------------------------------
+
+
+#### 2.1 Create django project
+
+        STEPS:
+
+        1. Create django project inside the root
+           folder
+           (finesauces) λ django-admin startproject config .
+        2. Checking current project structure
+           $ tree -L 2
+           .
+           ├── 2022-django-ecom-finesauces
+           │   ├── LICENSE
+           │   ├── README.md
+           │   ├── config
+           │   ├── manage.py
+           │   └── requirements.txt
+           └── venv39327
+        3. Run the server  
+             
+        modified:   README.md
+        new file:   config/__init__.py
+        new file:   config/asgi.py
+        new file:   config/settings.py
+        new file:   config/urls.py
+        new file:   config/wsgi.py
+        new file:   manage.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
