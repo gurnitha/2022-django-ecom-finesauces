@@ -66,7 +66,7 @@ https://github.com/gurnitha/2022-django-ecom-finesauces
            │   └── requirements.txt
            └── venv39327
         3. Run the server  
-             
+
         modified:   README.md
         new file:   config/__init__.py
         new file:   config/asgi.py
@@ -74,6 +74,48 @@ https://github.com/gurnitha/2022-django-ecom-finesauces
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+
+#### 2.2 Updating project settings with django-environ
+
+        STEPS:
+
+        1. Install django-environ
+           (finesauces) λ pip install django-environ
+        2. Create .env file: config/.env
+           (finesauces) λ touch config\.env
+        3. Declare your environment variables in .env
+        4. Initialise environ on settings.py 
+        5. Add SECRET_KEY varable to setting.spy
+        6. Add db configuration variable in settings.py
+        7. Test it out :)
+        8. Run initial migration
+           (finesauces) λ python manage.py migrate
+        9. Checking the created table in db
+           (finesauces) λ psql -h localhost
+           hp=# \c db_name
+           db_name=# \dt
+
+                          List of relations
+         Schema |            Name            | Type  | Owner
+        --------+----------------------------+-------+-------
+         public | auth_group                 | table | hp
+         public | auth_group_permissions     | table | hp
+         public | auth_permission            | table | hp
+         public | auth_user                  | table | hp
+         public | auth_user_groups           | table | hp
+         public | auth_user_user_permissions | table | hp
+         public | django_admin_log           | table | hp
+         public | django_content_type        | table | hp
+         public | django_migrations          | table | hp
+         public | django_session             | table | hp
+        (10 rows)
+
+        db_name=# \q
+
+        modified:   README.md
+        modified:   config/settings.py
+
 
 
 
