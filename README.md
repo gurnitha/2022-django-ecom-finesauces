@@ -173,6 +173,63 @@ https://github.com/gurnitha/2022-django-ecom-finesauces
         modified:   requirements.txt
 
 
+#### 3.2 Designing listings models (Category and Product models)
+
+        STEPS:
+
+        1. Create Category model
+        2. Create Product model with ManyToOne relationship
+           with Category
+        3. Install Pillow
+           (finesauces) λ pip install pillow
+        4. Creating and applying migrations
+           (finesauces) λ python manage.py makemigrations
+           (finesauces) λ python manage.py migrate
+        5. Check the result :)
+
+           (finesauces) λ psql -h localhost
+           ...
+
+           hp=# \c db_name
+           You are now connected to database "db_name" as user "hp".
+           db_name=# \dt
+                             List of relations
+            Schema |            Name            | Type  | Owner
+           --------+----------------------------+-------+-------
+            ...
+            public | listings_category          | table | hp
+            public | listings_product           | table | hp
+          (12 rows)
+
+        6. Creating administration site
+
+           6.1 Creating superuser   
+           6.2 Accessing administration site
+           6.3 Adding models to the administration site
+
+        7. Customizing how models are displayed
+
+        8. Serving image files
+        9. Adding some items from admin panel
+        10. Update requirements.txt file
+
+        modified:   README.md
+        modified:   apps/listings/admin.py
+        new file:   apps/listings/migrations/0001_initial.py
+        modified:   apps/listings/models.py
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   media/products/komodo_dragon.jpg
+        new file:   media/products/orange_habanero.jpg
+        modified:   requirements.txt        
+
+  
+
+
+
+
+
+
 
 
 
