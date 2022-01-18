@@ -137,7 +137,7 @@ https://github.com/gurnitha/2022-django-ecom-finesauces
         5. Update requirements.txt file
         6. Project structure
 
-.
+            .
             ├── 2022-django-ecom-finesauces
             │   ├── LICENSE
             │   ├── README.md
@@ -222,6 +222,11 @@ https://github.com/gurnitha/2022-django-ecom-finesauces
         new file:   media/products/komodo_dragon.jpg
         new file:   media/products/orange_habanero.jpg
         modified:   requirements.txt        
+
+
+#### 3.3 House keeping: Modified README.md file
+
+        modified:   README.md
 
   
 
