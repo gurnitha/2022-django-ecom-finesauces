@@ -118,6 +118,65 @@ https://github.com/gurnitha/2022-django-ecom-finesauces
 
 
 
+### 3. CREATING LISTINGS APPLICATION
+------------------------------------
+
+
+#### 3.1 Create listings app inside apps folder
+
+        STEPS:
+
+        1. Create folders
+           (finesauces) λ mkdir apps\listings
+        2. Create listings app
+           (finesauces) λ django-admin startapp listings apps\listings
+        3. Activating listings application
+           - modify apps.py
+           - install listings in settings.py
+        4. Test it out :)
+        5. Update requirements.txt file
+        6. Project structure
+
+.
+            ├── 2022-django-ecom-finesauces
+            │   ├── LICENSE
+            │   ├── README.md
+            │   ├── apps
+            │   │   └── listings
+            │   │       ├── __init__.py
+            │   │       ├── __pycache__
+            │   │       ├── admin.py
+            │   │       ├── apps.py
+            │   │       ├── migrations
+            │   │       ├── models.py
+            │   │       ├── tests.py
+            │   │       └── views.py
+            │   ├── config
+            │   │   ├── asgi.py
+            │   │   ├── settings.py
+            │   │   ├── urls.py
+            │   │   └── wsgi.py
+            │   ├── db.sqlite3
+            │   ├── manage.py
+            │   └── requirements.txt
+            └── venv39327
+
+        modified:   README.md
+        new file:   apps/listings/__init__.py
+        new file:   apps/listings/admin.py
+        new file:   apps/listings/apps.py
+        new file:   apps/listings/migrations/__init__.py
+        new file:   apps/listings/models.py
+        new file:   apps/listings/tests.py
+        new file:   apps/listings/views.py
+        modified:   config/settings.py
+        modified:   requirements.txt
+
+
+
+
+
+
 
 
 
